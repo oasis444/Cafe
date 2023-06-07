@@ -9,13 +9,28 @@ import SwiftUI
 
 struct EventSectionView: View {
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            LazyHStack(spacing: 16) {
-                ForEach(Event.sample) {
-                    EventSectionItemView(event: $0)
+        VStack {
+            HStack {
+                Text("Events")
+                Spacer()
+                Button(action: {
+                    print("See all")
+                }) {
+                    Text("See all")
+                        .font(.subheadline)
+                        .tint(.green)
                 }
             }
             .padding(.horizontal, 16)
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                LazyHStack(spacing: 16) {
+                    ForEach(Event.sample) {
+                        EventSectionItemView(event: $0)
+                    }
+                }
+                .padding(.horizontal, 16)
+            }
         }
     }
 }

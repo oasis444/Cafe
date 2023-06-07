@@ -12,39 +12,18 @@ struct MainTabView: View {
     let items: [GridItem] = Array(repeating: .init(.flexible()), count: 1)
     
     var body: some View {
-        List {
-            Section {
-                ForEach(numbers, id: \.self) {
-                    Text("\($0)")
+        TabView {
+            HomeView()
+                .tabItem {
+                    Tab.home.imageItem
+                    Tab.home.textItem
                 }
-            } header: {
-                Text("Header")
-            }
-            
-            Section {
-                ForEach(numbers, id: \.self) {
-                    Text("\($0)")
+            OtherView()
+                .tabItem {
+                    Tab.other.imageItem
+                    Tab.other.textItem
                 }
-            } header: {
-                Text("Header")
-            } footer: {
-                Text("Footer")
-            }
         }
-        
-        
-//        TabView {
-//            Text("Home")
-//                .tabItem {
-//                    Tab.home.imageItem
-//                    Tab.home.textItem
-//                }
-//            Text("Other")
-//                .tabItem {
-//                    Tab.other.imageItem
-//                    Tab.other.textItem
-//                }
-//        }
     }
 }
 
