@@ -48,6 +48,8 @@ struct SettingUserInfoSectionView: View {
                     .padding(8)
                     .overlay(Capsule().stroke(Color.green))
             }
+            .buttonStyle(.plain) // List에서 버튼작동이 제대로 안되는 문제로 인해 추가
+//        https://stackoverflow.com/questions/56561064/swiftui-multiple-buttons-in-a-list-row
         }
     }
 }

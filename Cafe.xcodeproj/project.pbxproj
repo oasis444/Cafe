@@ -20,6 +20,7 @@
 		336430602A2F34C30065701A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3364305F2A2F34C30065701A /* Event.swift */; };
 		336430622A2F6F4C0065701A /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336430612A2F6F4C0065701A /* HomeHeaderView.swift */; };
 		336430642A2F836C0065701A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336430632A2F836C0065701A /* HomeView.swift */; };
+		338EFAA02A31840D0058592D /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338EFA9F2A31840D0058592D /* HomeVM.swift */; };
 		339F85F22A2F1E83006BC9FD /* EventSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339F85F12A2F1E83006BC9FD /* EventSectionView.swift */; };
 		33E7C5482A2F9C650091D51A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E7C5472A2F9C650091D51A /* User.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		3364305F2A2F34C30065701A /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		336430612A2F6F4C0065701A /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		336430632A2F836C0065701A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		338EFA9F2A31840D0058592D /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		339F85F12A2F1E83006BC9FD /* EventSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSectionView.swift; sourceTree = "<group>"; };
 		33E7C5472A2F9C650091D51A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +126,7 @@
 		336430652A2F8DD10065701A /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				338EFA9F2A31840D0058592D /* HomeVM.swift */,
 				336430632A2F836C0065701A /* HomeView.swift */,
 				336430612A2F6F4C0065701A /* HomeHeaderView.swift */,
 				335758062A2E447B0072F6A1 /* MenuSuggestionSectionView.swift */,
@@ -211,6 +214,7 @@
 				335757F52A2DCB2B0072F6A1 /* CafeApp.swift in Sources */,
 				336430602A2F34C30065701A /* Event.swift in Sources */,
 				330498AD2A307C0000CF4289 /* SettingView.swift in Sources */,
+				338EFAA02A31840D0058592D /* HomeVM.swift in Sources */,
 				335758072A2E447B0072F6A1 /* MenuSuggestionSectionView.swift in Sources */,
 				33E7C5482A2F9C650091D51A /* User.swift in Sources */,
 				336430622A2F6F4C0065701A /* HomeHeaderView.swift in Sources */,

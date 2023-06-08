@@ -32,6 +32,8 @@ enum HeaderButton {
 }
 
 struct HomeHeaderView: View {
+    @Binding var isNeedToReload: Bool
+    
     var body: some View {
         VStack(spacing: 16) {
             HStack(alignment: .top) {
@@ -39,7 +41,7 @@ struct HomeHeaderView: View {
                     .font(.largeTitle)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 Button {
-                    print("refresh")
+                    isNeedToReload = true
                 } label: {
                     Image(systemName: HeaderButton.refresh.buttonName)
                 }
@@ -78,6 +80,7 @@ struct HomeHeaderView: View {
 
 struct HeaderViewProvider_Previews: PreviewProvider {
     static var previews: some View {
-        HomeHeaderView()
+        @ObservedObject var viewModel = HomeVM()
+        HomeHeaderView(isNeedToReload: $viewModel.isNeedToReload)
     }
 }
